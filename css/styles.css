@@ -507,8 +507,8 @@ img {
   height: 86px;
   position: relative;
   margin-left: 93px;
-  }
-  .footer-tittle-form {
+}
+.footer-tittle-form {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -517,7 +517,7 @@ img {
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #FFFFFF
+  color: #ffffff;
 }
 .subscription-form-grup {
   display: flex;
@@ -525,7 +525,7 @@ img {
   bottom: 0px;
   gap: 12px;
 }
-.subscription-form-input{
+.subscription-form-input {
   display: block;
   padding-left: 16px;
   width: 358px;
@@ -542,32 +542,29 @@ img {
   color: rgba(255, 255, 255, 0.6);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.subscription-form-input:hover
- {
-  border-color: #2196F3;
+.subscription-form-input:hover {
+  border-color: #2196f3;
 }
 .footer-form-btn {
   gap: 10px;
   padding: 0px;
   border: none;
   width: 200px;
-    height: 50px;
-    background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(30 / 16);
-      display: inline-flex;
-      align-items: center;
-      text-align: center;
-      justify-content: center;
-      letter-spacing: 0.06em;
-     color: #FFFFFF;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
 }
-
-
 
 /*portfolio section*/
 .portfolio {
@@ -712,6 +709,7 @@ img {
   border-radius: 4px;
   opacity: 1;
   transition: transform 250ms ease-in-out 40ms, opacity 250ms ease-in-out 40ms;
+  padding: 40px;
 }
 .backdrop.is-hidden .modal {
   opacity: 0;
@@ -731,4 +729,107 @@ img {
   background-color: #ffffff;
   padding: 0px;
   cursor: pointer;
+}
+/*modal form*/
+.register-form {
+  text-align: center;
+}
+.register-form-title {
+  display: block;
+  margin-bottom: 14px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.register-form-group {
+  margin-bottom: 18px;
+}
+.register-form-wrap {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+}
+.register-form-label {
+  display: block;
+  text-align: left;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.register-form-input,
+.register-form-massage {
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+}
+.register-form-icon {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+}
+.register-form-massage {
+  width: 448px;
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.register-form-agreement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  margin-bottom: 30px;
+}
+.register-form-agreement-link {
+  color: #2196f3;
+}
+.register-checkbox:checked + .register-icon .register-icon-uncheck {
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.register-icon-check {
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.register-checkbox:checked + .register-icon .register-icon-check {
+  opacity: 1;
+}
+.register-form-agreement-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: #757575;
+  user-select: none;
+  text-underline-position: under;
+}
+.register-form-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 52px;
+  cursor: pointer;
+  border: none;
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
 }

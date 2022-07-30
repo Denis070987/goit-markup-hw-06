@@ -594,7 +594,7 @@
                 placeholder="E-mail"
                 required
               />
-              <button class="footer-form-btn" type="submit" lang="uk">
+              <button class="footer-form-btn" type="submit">
                 Підписатися
                 <svg width="24px" height="24px">
                   <use href="./images/icons.svg#icon-icon-send"></use>
@@ -613,6 +613,58 @@
             <use href="./images/icons.svg#icon-close-black-18dp"></use>
           </svg>
         </button>
+        <form class="register-form">
+          <strong class="register-form-title" lang="uk">
+            Залиште свої дані, ми вам передзвонимо
+          </strong>
+          <div class="register-form-group" role="group">
+            <label class="register-form-wrap">
+              <span class="register-form-label" lang="uk">Ім'я</span>
+              <input class="register-form-input" type="text" /><svg
+                class="register-form-icon"
+                width="18px"
+                height="18px"
+              >
+                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+              </svg>
+            </label>
+            <label class="register-form-wrap">
+              <span class="register-form-label" lang="uk">Телефон</span>
+              <input class="register-form-input" type="tel" />
+              <svg class="register-form-icon" width="18px" height="18px">
+                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+              </svg>
+            </label>
+            <label class="register-form-wrap">
+              <span class="register-form-label" lang="uk">Пошта</span>
+              <input class="register-form-input" type="email" />
+              <svg class="register-form-icon" width="18px" height="18px">
+                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+              </svg>
+            </label>
+            <label class="register-form-wrap">
+              <span class="register-form-label" lang="uk">Коментар</span>
+              <textarea
+                class="register-form-massage"
+                placeholder="Введіть текст"
+                name=""
+                rows=""
+              ></textarea>
+            </label>
+          </div>
+          <label class="register-form-agreement">
+            <input class="register-checkbox visually-hidden" type="checkbox" name="agreement" />
+            <svg class="register-icon" width="16px" height="15px">
+              <use class="register-icon-uncheck" href="./images/icons.svg#icon-Vector"></use>
+              <use class="register-icon-check" href="./images/icons.svg#icon-check"></use>
+              <span class="register-form-agreement-text">
+                Погоджуюся з розсилкою та приймаю
+                <a class="register-form-agreement-link" href="">Умови договору</a>
+              </span>
+            </svg>
+          </label>
+          <button class="register-form-btn" type="submit">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
