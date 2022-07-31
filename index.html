@@ -620,24 +620,33 @@
           <div class="register-form-group" role="group">
             <label class="register-form-wrap">
               <span class="register-form-label" lang="uk">Ім'я</span>
-              <input class="register-form-input" type="text" /><svg
-                class="register-form-icon"
-                width="18px"
-                height="18px"
-              >
+              <input
+                class="register-form-input"
+                type="text"
+                name="name"
+                minlength="3"
+                required
+              /><svg class="register-form-icon" width="18px" height="18px">
                 <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
               </svg>
             </label>
             <label class="register-form-wrap">
               <span class="register-form-label" lang="uk">Телефон</span>
-              <input class="register-form-input" type="tel" />
+              <input
+                class="register-form-input"
+                type="tel"
+                name="tel"
+                required
+                maxlength="13"
+                minlength="13"
+              />
               <svg class="register-form-icon" width="18px" height="18px">
                 <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
               </svg>
             </label>
             <label class="register-form-wrap">
               <span class="register-form-label" lang="uk">Пошта</span>
-              <input class="register-form-input" type="email" />
+              <input class="register-form-input" type="email" name="email" required />
               <svg class="register-form-icon" width="18px" height="18px">
                 <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
               </svg>
@@ -645,15 +654,20 @@
             <label class="register-form-wrap">
               <span class="register-form-label" lang="uk">Коментар</span>
               <textarea
-                class="register-form-massage"
+                class="register-form-message"
                 placeholder="Введіть текст"
-                name=""
+                name="message"
                 rows=""
               ></textarea>
             </label>
           </div>
           <label class="register-form-agreement">
-            <input class="register-checkbox visually-hidden" type="checkbox" name="agreement" />
+            <input
+              class="register-checkbox visually-hidden"
+              type="checkbox"
+              name="agreement"
+              required
+            />
             <svg class="register-icon" width="16px" height="15px">
               <use class="register-icon-uncheck" href="./images/icons.svg#icon-Vector"></use>
               <use class="register-icon-check" href="./images/icons.svg#icon-check"></use>
